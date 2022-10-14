@@ -66,9 +66,9 @@ function uzd9() {
   let myString = "";
   for (let i = -10; i <= 35; i++) {
     if (i === 35) {
-      myString = myString + i + ".";
+      myString += `${i}.`;
     } else {
-      myString = myString + i + ", ";
+      myString += `${i}, `;
     }
   }
   console.log(myString);
@@ -149,3 +149,34 @@ function uzd15() {
 }
 
 //uzd15();
+
+// Edabit =====================================
+
+function edabit1(num) {
+  console.log(num + 1);
+  return num + 1;
+}
+
+//edabit1(4);
+
+function edabit2(num1, num2) {
+  console.log(num1 * num2);
+  return num1 * num2;
+}
+//edabit2(3, 5);
+
+function edabit3(num) {
+  let sum = 0;
+  for (let i = 1; i <= num; i++) {
+    sum = sum + i;
+  }
+  console.log("sum: ", sum);
+  return sum;
+}
+//edabit3(3);
+
+function edabit4(num) {
+  let binary = toString(num);
+  console.log("binary ===", binary);
+}
+//edabit4(5);
